@@ -4,7 +4,7 @@ import "dotenv/config"
 import { getBalance } from './getWalletBalance'
 import { getTransactionSummary } from './getTransSummary';
 
-const bot = new Telegraf('7170893160:AAGEnwBDep2n2JMNXWHjk8_zytlrxYAUyww');
+const bot = new Telegraf('BOT_TOKEN');
 bot.start((ctx) => {
   const welcomeMessage =
   `👋 Welcome to Canto Compass! A one-stop bot to help you navigate the Canto blockchain.
