@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/dotenv": "^8.2.0",
+    "hardhat": "^2.22.3",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@covalenthq/client-sdk": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "telegraf": "^4.16.3"
+  }
+}
