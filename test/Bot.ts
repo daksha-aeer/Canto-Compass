@@ -1,10 +1,13 @@
 import { Telegraf } from 'telegraf';
+// import { webhookCallback } from "grammy";
+// import express from "express";
+
 import { message } from 'telegraf/filters';
 import "dotenv/config"
 import { getBalance } from './getWalletBalance'
 import { getTransactionSummary } from './getTransSummary';
 
-const bot = new Telegraf('BOT_TOKEN');
+const bot = new Telegraf(process.env.BOT_TOKEN as string);
 bot.start((ctx) => {
   const welcomeMessage =
   `👋 Welcome to Canto Compass! A one-stop bot to help you navigate the Canto blockchain.

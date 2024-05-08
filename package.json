@@ -8,6 +8,16 @@
   "dependencies": {
     "@covalenthq/client-sdk": "^1.0.2",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "telegraf": "^4.16.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev test/Bot.ts",
+    "start": "node test/Bot.js"
+  },
+  "engines": {
+    "node": "18.15.0",
+    "npm": "9.5.0"
   }
 }
