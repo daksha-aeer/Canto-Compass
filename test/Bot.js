@@ -7,7 +7,7 @@ const getWalletBalance_1 = require("./getWalletBalance");
 const getTransSummary_1 = require("./getTransSummary");
 const telegramToken = require('./token');
 
-const bot = new telegraf_1.Telegraf(telegramToken);
+const bot = new telegraf_1.Telegraf(process.env.BOT_TOKEN);
 bot.start((ctx) => {
     const welcomeMessage = `👋 Welcome to Canto Compass! A one-stop bot to help you navigate the Canto blockchain.
 
